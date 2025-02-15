@@ -1,6 +1,8 @@
 import LogoIcon from "@/assets/logo.svg"
 import MenuIcon from "@/assets/icon-menu.svg"
 import {Button} from "@/components/Button"
+import syntheous from "@/assets/syntheous.png"
+import Image from "next/image";
 export const Header = () => {
     return (
 
@@ -13,13 +15,18 @@ export const Header = () => {
                   <div>
                       <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15">
                           {/*<LogoIcon className="h-8 w-8"/>*/}
+                          <Image
+                              src={syntheous}
+                              alt={"logo"}
+                              className="h-8 w-8"
+                          />
                       </div>
                   </div>
                   <div className="hidden md:block">
                       <nav className="flex gap-8 text-sm">
                           <a href="#features" className="text-white/70 hover:text-white transition">Car</a>
                           <a href="#developers" className="text-white/70 hover:text-white transition">Meet the team</a>
-                          <a href="#changelog" className="text-white/70 hover:text-white transition">About F1-in-schools</a>
+                          <a href="#stem_racing" className="text-white/70 hover:text-white transition">About Stem Racing</a>
                       </nav>
                   </div>
                   <div className="flex gap-4 items-center">

@@ -15,17 +15,17 @@ export const Footer = () => {
         </div>
         <div>
           <nav className="flex flex-col lg:flex-row lg:gap-7 gap-5 lg:flex-1 lg:justify-center">
-            <a href="#features" className="text-white/70 hover:text-white text-xs md:text-sm transition">Features</a>
-            <a href="#developers" className="text-white/70 hover:text-white text-xs md:text-sm transition">Developers</a>
-            <a href="#changelog" className="text-white/70 hover:text-white text-xs md:text-sm transition">Changelog</a>
+            <a href="#features" className="text-white/70 hover:text-white text-xs md:text-sm transition">Car</a>
+            <a href="#developers" className="text-white/70 hover:text-white text-xs md:text-sm transition">Meet the team</a>
+            <a href="#stem_racing" className="text-white/70 hover:text-white text-xs md:text-sm transition">About Stem Racing</a>
           </nav>
         </div>
 
         <div className="flex gap-5 lg:flex-1 lg:justify-end">
           <nav className="flex flex-col lg:flex-row lg:gap-7 gap-5 lg:justify-end">
-            <a href=""><Xsocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
-            <a href="https://www.instagram.com/syntheous_f1_school/"><Instasocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
-            <a><Ytsocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
+            <a href="https://x.com/Syntheous_f1"><Xsocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
+            <a href="https://www.instagram.com/syntheous_stemracing/"><Instasocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
+            <a href="https://www.youtube.com/@Syntheous_F1"><Ytsocial className="text-white/40 hover:text-white text-xs md:text-sm transition"/></a>
           </nav>
 
         </div>

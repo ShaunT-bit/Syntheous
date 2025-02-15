@@ -49,43 +49,14 @@ const testimonials = [
   }
 ];
 
-export const Testimonials = () => {
-  return <section id={"developers"} className="py-20 md:py-24">
+export const About = () => {
+  return <section id={"stem_racing"} className="py-20 md:py-24">
     <div className="container">
-      <h2 className="text-5xl md:text-6xl text-center tracking-tighter font-medium ">Beyond Boundaries</h2>
-      <p className="text-white/70 text-lg md:text-xl text-center mt-5 tracking-tight max-w-sm mx-auto">Our team blends
-        innovation and precision to excel in the F1 in Schools competition, pushing the limits of speed and
-        teamwork.</p>
-
-      <div className="mt-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {testimonials.map(testimonial => (
-              <div
-                  key={testimonial.name}
-                  className="border border-white/15 p-6 md:p-10 rounded-xl bg-[linear-gradient(to_bottom_left,rgb(0,61,105,.4),black)] flex flex-col justify-between h-full min-h-[306px]"
-              >
-                <div className="text-lg md:text-2xl tracking-tight">{testimonial.text}</div>
-                <div className="flex items-center gap-3 mt-5">
-                  <div
-                      className="relative after:content-[''] after:absolute after:inset-0 after:bg-[#204646] after:mix-blend-soft-light before:content-[''] before:absolute before:inset-0 before:border before:border-white/30 before:z-10 before:rounded-lg"
-                  >
-                    <Image
-                        src={testimonial.avatarImg}
-                        alt={`Avatar for ${testimonial.name}`}
-                        className="h-[58px] w-[58px] rounded-lg grayscale border"
-                    />
-                  </div>
-                  <div className="">
-                    <div>{testimonial.name}</div>
-                    <div className="text-white/50 text-sm">{testimonial.title}</div>
-                  </div>
-                </div>
-              </div>
-          ))}
-        </div>
-      </div>
-
-
+      <h2 className="text-5xl md:text-6xl text-center tracking-tighter font-medium ">About Stem Racing</h2>
+      <p className="text-white/70 text-lg md:text-xl text-center mt-5 tracking-tight max-w-3xl mx-auto">STEM Racing
+        (formerly F1 in Schools) is an international STEM competition endorsed by Formula 1 for students aged 9–19.</p>
+      <p className="text-white/70 text-lg md:text-xl text-center mt-5 tracking-tight max-w-3xl mx-auto">STEM Racing
+        Groups of 3–6 students have to design and manufacture a miniature F1 car using CAD/CAM and CAE design tools. The cars are powered by CO2 cartridges and are attached to a track by a nylon wire. They are timed from the moment they are launched to when they pass the finish line by a computer.</p>
     </div>
   </section>;
 };

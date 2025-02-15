@@ -9,14 +9,6 @@ import {useMotionTemplate, motion, useMotionValue, animate, ValueAnimationTransi
 
 const tabs = [
   {
-    icon: null,
-    title: null,
-    isNew: false,
-    backgroundPositionX: 0,
-    backgroundPositionY: 80,
-    backgroundSizeX: 170,
-  },
-  {
     icon: "/assets/lottie/vroom.lottie",
     title: "Aerodynamic Excellence",
     isNew: false,
