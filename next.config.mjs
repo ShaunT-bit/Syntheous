@@ -5,8 +5,8 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',          // Required for static export
   distDir: 'out',            // Output directory
-  basePath: isProd ? '/Syntheous' : '',         // Base path for GitHub Pages
-  assetPrefix: isProd ? '/Syntheous/' : '',     // Correct asset paths for GitHub Pages
+  basePath: '/Syntheous' ,         // Base path for GitHub Pages
+  assetPrefix: '/Syntheous/',     // Correct asset paths for GitHub Pages
   images: {
     unoptimized: true,      // Disable Next.js image optimization for static sites
   },
