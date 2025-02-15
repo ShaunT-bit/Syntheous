@@ -1,15 +1,14 @@
 {
-  "name": "Syntheous",
+  "name": "ai-startup-landing-page",
   "version": "0.1.0",
-  "homepage": "https://ShaunT-bit.github.io/Syntheous",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",

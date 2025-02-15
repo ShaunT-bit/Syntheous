@@ -19,7 +19,7 @@ const testimonials = [
 ];
 
 export const Sponsers = () => {
-  return <section id={"developers"} className="py-20 md:py-24">
+  return <section id={"Sponsers"} className="py-20 md:py-24">
     <div className="container">
       <h2 className="text-5xl md:text-6xl text-center tracking-tighter font-medium ">Meet Our Sponsers</h2>
       <p className="text-white/70 text-lg md:text-xl text-center mt-5 tracking-tight max-w-sm mx-auto">We are proud to
