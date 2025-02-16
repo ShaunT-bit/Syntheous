@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"; // Add this import
 import spons1 from "@/assets/spons1.jpeg"
 import spons2 from "@/assets/spon2.jpeg"
 import spons3 from "@/assets/spons3.png"
@@ -9,18 +10,21 @@ const testimonials = [
     name: "Shaun Thomas Shibu",
     title: "Team Leader & Digital Strategist",
     avatarImg: spons1,
+    link: "https://hospitalityce.com", // Add link for each testimonial
   },
   {
     text: "Thanmay crafts the team's visual identity, delivering professional designs for logos, promotional materials, and car liveries.",
     name: "Thanmay Nair",
     title: "Brand & Visual Designer",
     avatarImg: spons2,
+    link: "https://eliteprimecontrg.com",
   },
   {
     text: "Thanmay crafts the team's visual identity, delivering professional designs for logos, promotional materials, and car liveries.",
     name: "Thanmay Nair",
     title: "Brand & Visual Designer",
     avatarImg: spons3,
+    link: "https://www.f1bearings.com",
   },
 ];
 
@@ -46,17 +50,24 @@ export const Sponsers = () => {
                 <div className="w-full">
                   <div className="relative w-full aspect-square">
                     <div className="absolute inset-0 rounded-lg border border-white/30">
-                      <div className="relative w-full h-full">
-                        <Image
-                            src={testimonial.avatarImg}
-                            alt={`Avatar for ${testimonial.name}`}
-                            className="rounded-lg"
-                            fill
-                            style={{ objectFit: 'contain' }}
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                        <div className="absolute inset-0 bg-[#204646] mix-blend-soft-light rounded-lg"></div>
-                      </div>
+                      <Link
+                          href={testimonial.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="relative w-full h-full block cursor-pointer transition-opacity hover:opacity-80"
+                      >
+                        <div className="relative w-full h-full">
+                          <Image
+                              src={testimonial.avatarImg}
+                              alt={`Avatar for ${testimonial.name}`}
+                              className="rounded-lg"
+                              fill
+                              style={{ objectFit: 'contain' }}
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                          <div className="absolute inset-0 bg-[#204646] mix-blend-soft-light rounded-lg"></div>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
