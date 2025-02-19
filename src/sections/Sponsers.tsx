@@ -12,13 +12,13 @@ const testimonials = [
     avatarImg: spons1,
     link: "https://hospitalityce.com", // Add link for each testimonial
   },
-  {
-    text: "Thanmay crafts the team's visual identity, delivering professional designs for logos, promotional materials, and car liveries.",
-    name: "Thanmay Nair",
-    title: "Brand & Visual Designer",
-    avatarImg: spons2,
-    link: "https://eliteprimecontrg.com",
-  },
+  //{
+  //  text: "Thanmay crafts the team's visual identity, delivering professional designs for logos, promotional materials, and car liveries.",
+  //  name: "Thanmay Nair",
+  //  title: "Brand & Visual Designer",
+  //  avatarImg: spons2,
+  //  link: "https://eliteprimecontrg.com",
+  //},
   {
     text: "Thanmay crafts the team's visual identity, delivering professional designs for logos, promotional materials, and car liveries.",
     name: "Thanmay Nair",
